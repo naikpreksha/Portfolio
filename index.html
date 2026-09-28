@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Preksha Naik | Portfolio</title>
+<link href="./index_files/css2" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFF7FA;--card:#FFFFFF;--ink:#4A3B5C;--muted:#8A7A9B;--pink:#FFD6E4;--lav:#E4DAFF;--mint:#D3F2E6;--peach:#FFE3CC;--accent:#B79CF0;--accent-ink:#3B2A5C;--shadow:0 10px 30px rgba(183,156,240,.22);--line:#F0E6F5;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1F1830;--card:#2B2241;--ink:#F3EBFA;--muted:#B9A9CE;--pink:#4A2E4F;--lav:#3A2F63;--mint:#24463F;--peach:#54392F;--accent:#C7B0FF;--accent-ink:#231738;--shadow:0 10px 30px rgba(0,0,0,.35);--line:#3B3055}}
+:root[data-theme="dark"]{--bg:#1F1830;--card:#2B2241;--ink:#F3EBFA;--muted:#B9A9CE;--pink:#4A2E4F;--lav:#3A2F63;--mint:#24463F;--peach:#54392F;--accent:#C7B0FF;--accent-ink:#231738;--shadow:0 10px 30px rgba(0,0,0,.35);--line:#3B3055}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.05rem/1.7 Nunito,system-ui,sans-serif;transition:background .3s,color .3s}
+h1,h2,h3{font-family:Quicksand,Nunito,system-ui,sans-serif;margin:0;line-height:1.15}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:12px}
+.wrap{max-width:58rem;margin:0 auto;padding:0 1.25rem}
+nav.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-top:.7rem;padding-bottom:.7rem}
+.logo{font:700 1.15rem Quicksand,sans-serif;text-decoration:none}
+.links{display:flex;gap:.25rem;overflow-x:auto;scrollbar-width:none}
+.links a{padding:.4rem .9rem;border-radius:999px;text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem;white-space:nowrap;transition:background .2s,color .2s}
+.links a.on{background:var(--lav);color:var(--ink)}
+.theme{border:0;background:var(--pink);width:2.5rem;height:2.5rem;border-radius:50%;font-size:1.1rem;flex:none}
+.hero{position:relative;overflow:hidden;padding:4.5rem 0 5rem}
+.blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:.75;transition:transform .2s ease-out;pointer-events:none}
+.b1{width:18rem;height:18rem;background:var(--pink);top:-3rem;right:-2rem}
+.b2{width:14rem;height:14rem;background:var(--lav);bottom:-3rem;left:-3rem}
+.b3{width:10rem;height:10rem;background:var(--mint);top:35%;right:30%}
+.hero .wrap{position:relative}
+.role{display:inline-block;background:var(--card);padding:.35rem 1rem;border-radius:999px;box-shadow:var(--shadow);font-weight:600;color:var(--muted);margin-bottom:1.25rem}
+.hero h1{font-size:clamp(2.6rem,8vw,4.8rem);font-weight:700;max-width:14ch}
+.hero .lead{max-width:36rem;color:var(--muted);margin:1.25rem 0 2rem;font-size:1.12rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{border:0;padding:.85rem 1.6rem;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px)}
+.btn.p{background:var(--accent);color:var(--accent-ink);box-shadow:var(--shadow)}
+.btn.s{background:var(--card);box-shadow:var(--shadow)}
+section{padding:3rem 0}
+section h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:1.5rem}
+.card{background:var(--card);border-radius:1.5rem;padding:1.75rem;box-shadow:var(--shadow)}
+.about .card{display:grid;gap:1rem;max-width:44rem}
+.about p{margin:0}
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.tab{border:0;padding:.6rem 1.2rem;border-radius:999px;background:var(--card);box-shadow:var(--shadow);font-weight:600;transition:background .2s}
+.tab[aria-selected="true"]{background:var(--pink)}
+.edu{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center}
+.score{width:7.5rem;height:7.5rem;border-radius:50%;display:grid;place-items:center;text-align:center;background:var(--mint);font:700 1.6rem Quicksand,sans-serif;line-height:1.1}
+.score small{display:block;font:600 .8rem Nunito,sans-serif;color:var(--muted)}
+.edu h3{font-size:1.3rem}
+.edu p{margin:.25rem 0 0;color:var(--muted)}
+.chips{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem}
+.chip{border:0;padding:.45rem 1rem;border-radius:999px;background:var(--card);box-shadow:var(--shadow);font-weight:600}
+.chip[aria-pressed="true"]{background:var(--lav)}
+.skills{display:flex;flex-wrap:wrap;gap:.75rem;min-height:5rem}
+.skill{padding:.6rem 1.2rem;border-radius:1rem;font-weight:600;animation:pop .35s ease both}
+.skill[data-c="Programming"]{background:var(--lav)}.skill[data-c="Web Development"]{background:var(--pink)}.skill[data-c="Tools"]{background:var(--peach)}.skill[data-c="Soft Skills"]{background:var(--mint)}
+@keyframes pop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+.langs{margin-top:1.5rem;display:flex;gap:.6rem;flex-wrap:wrap}
+.langs h3{width:100%;font-size:1.1rem}
+.lang{background:var(--card);padding:.5rem 1rem;border-radius:1rem;box-shadow:var(--shadow)}
+.acts{display:flex;flex-wrap:wrap;gap:1rem}
+.act{border:0;background:var(--card);box-shadow:var(--shadow);border-radius:1.5rem;padding:1.25rem 1.5rem;min-width:8.5rem;text-align:center;transition:transform .25s,background .25s}
+.act span{display:block;font-size:2rem}
+.act b{font-family:Quicksand,sans-serif}
+.act:hover{transform:translateY(-4px)}
+.act.on{background:var(--peach);animation:wiggle .5s}
+@keyframes wiggle{25%{transform:rotate(-5deg) scale(1.05)}75%{transform:rotate(5deg) scale(1.05)}}
+.quote{background:var(--lav);border-radius:1.75rem;padding:2rem;font:600 clamp(1.2rem,3vw,1.6rem)/1.5 Quicksand,sans-serif;max-width:46rem}
+.contact .card{display:grid;gap:1rem;max-width:32rem}
+.row{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.row span{overflow-wrap:anywhere}
+.copy{border:0;background:var(--pink);padding:.4rem 1rem;border-radius:999px;font-weight:600}
+.toast{position:fixed;left:50%;bottom:calc(1.5rem + env(safe-area-inset-bottom,0px));transform:translate(-50%,2rem);background:var(--ink);color:var(--bg);padding:.6rem 1.2rem;border-radius:999px;opacity:0;pointer-events:none;transition:.3s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+footer{text-align:center;color:var(--muted);padding:2rem 1rem 3rem}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media (max-width:34rem){.edu{grid-template-columns:1fr}.logo{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav class="bar"><div class="wrap">
+  <a class="logo" href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#home">Preksha Naik</a>
+  <div class="links" id="links">
+    <a href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#about">About</a><a href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#education">Education</a><a href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#skills">Skills</a><a href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#activities">Activities</a><a href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#contact">Contact</a>
+  </div>
+  <button class="theme" id="theme" aria-label="Switch between light and dark theme">☀️</button>
+</div></nav>
+
+<main>
+<div class="hero" id="home">
+  <div class="blob b1" data-d="20" style="transform: translate(0.458115px, -0.765027px);"></div><div class="blob b2" data-d="-25" style="transform: translate(-0.572644px, 0.956284px);"></div><div class="blob b3" data-d="12" style="transform: translate(0.274869px, -0.459016px);"></div>
+  <div class="wrap">
+    <span class="role">Computer Science &amp; Engineering Student</span>
+    <h1>Hi, I'm Preksha Naik</h1>
+    <p class="lead">Motivated CSE undergraduate passionate about programming, problem-solving, and learning new technologies. I'm eager to apply my technical skills to real-world projects and gain industry experience.</p>
+    <div class="btns"><a class="btn p" href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#skills">Explore My Work</a><a class="btn s" href="file:///C:/Users/Admin/Downloads/preksha-portfolio-soft.html#contact">Contact Me</a></div>
+  </div>
+</div>
+
+<section id="about" class="about rv in"><div class="wrap">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am a Computer Science &amp; Engineering undergraduate at Mangalore Institute of Technology and Engineering (MITE). I enjoy learning programming, exploring technology, working with teams, and developing my technical and problem-solving abilities.</p>
+    <p>I am a self-learner with an interest in building practical skills and gaining real-world industry experience.</p>
+  </div>
+</div></section>
+
+<section id="education" class="rv"><div class="wrap">
+  <h2>Education</h2>
+  <div class="tabs" role="tablist" id="tabs"><button class="tab" role="tab" aria-selected="true">B.E.</button><button class="tab" role="tab" aria-selected="false">Senior Secondary</button><button class="tab" role="tab" aria-selected="false">Secondary</button></div>
+  <div class="card edu" id="edu" role="tabpanel" aria-live="polite"><div class="score"><div>9.46<small>/10 CGPA</small></div></div><div><h3>Bachelor of Engineering, Computer Science &amp; Engineering</h3><p>Mangalore Institute of Technology and Engineering (MITE)</p><p>2025–2029</p></div></div>
+</div></section>
+
+<section id="skills" class="rv"><div class="wrap">
+  <h2>Technical Skills</h2>
+  <div class="chips" id="chips"><button class="chip" aria-pressed="true">All</button><button class="chip" aria-pressed="false">Programming</button><button class="chip" aria-pressed="false">Web Development</button><button class="chip" aria-pressed="false">Tools</button><button class="chip" aria-pressed="false">Soft Skills</button></div>
+  <div class="skills" id="skillList"><span class="skill" data-c="Programming">Python</span><span class="skill" data-c="Programming">C++</span><span class="skill" data-c="Programming">C</span><span class="skill" data-c="Web Development">HTML</span><span class="skill" data-c="Tools">MS Excel</span><span class="skill" data-c="Tools">AutoCAD</span><span class="skill" data-c="Soft Skills">Effective Communication</span><span class="skill" data-c="Soft Skills">Team Management</span><span class="skill" data-c="Soft Skills">Teamwork</span><span class="skill" data-c="Soft Skills">Self-Learning</span></div>
+  <div class="langs">
+    <h3>Languages</h3>
+    <span class="lang">English: Spoken &amp; Written</span><span class="lang">Kannada: Spoken &amp; Written</span><span class="lang">Hindi: Spoken &amp; Written</span>
+  </div>
+</div></section>
+
+<section id="activities" class="rv"><div class="wrap">
+  <h2>Extracurricular Activities</h2>
+  <p style="max-width:40rem;margin:0 0 1.25rem">I actively participate in college curricular and extracurricular activities, including:</p>
+  <div class="acts" id="acts"><button class="act"><span>💃</span><b>Dancing</b></button><button class="act"><span>🎤</span><b>Singing</b></button><button class="act"><span>🎭</span><b>Acting</b></button><button class="act"><span>🎨</span><b>Drawing</b></button><button class="act"><span>🗣️</span><b>Public Speaking</b></button></div>
+</div></section>
+
+<section id="objective" class="rv"><div class="wrap">
+  <h2>Career Objective</h2>
+  <div class="quote">To apply my programming, problem-solving, and technical skills in real-world projects while continuously learning new technologies and gaining valuable industry experience.</div>
+</div></section>
+
+<section id="contact" class="contact rv"><div class="wrap">
+  <h2>Contact</h2>
+  <div class="card">
+    <div class="row"><span>📧 <a href="mailto:prekshanaik01@gmail.com">prekshanaik01@gmail.com</a></span><button class="copy" data-copy="prekshanaik01@gmail.com" data-what="Email">Copy email</button></div>
+    <div class="row"><span>📱 <a href="tel:+918197691861">+91 8197691861</a></span><button class="copy" data-copy="+91 8197691861" data-what="Phone number">Copy number</button></div>
+    <div class="row"><span>📍 Moodbidri</span></div>
+  </div>
+</div></section>
+</main>
+<footer>Preksha Naik · Computer Science &amp; Engineering · MITE</footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+var EDU=[
+ {k:"B.E.",t:"Bachelor of Engineering, Computer Science & Engineering",s:"Mangalore Institute of Technology and Engineering (MITE)",y:"2025–2029",v:"9.46",u:"/10 CGPA"},
+ {k:"Senior Secondary",t:"Senior Secondary, Science",s:"Siddhartha PU College",y:"2025",v:"90%",u:"Percentage"},
+ {k:"Secondary",t:"Secondary Education",s:"RNS Vidyaniketan, Murudeshwar",y:"2023",v:"97.76%",u:"Percentage"}
+];
+var SK={"Programming":["Python","C++","C"],"Web Development":["HTML"],"Tools":["MS Excel","AutoCAD"],"Soft Skills":["Effective Communication","Team Management","Teamwork","Self-Learning"]};
+var ACT=[["💃","Dancing"],["🎤","Singing"],["🎭","Acting"],["🎨","Drawing"],["🗣️","Public Speaking"]];
+var $=function(id){return document.getElementById(id)};
+
+// Education tabs
+var tabs=$("tabs");
+EDU.forEach(function(e,i){var b=document.createElement("button");b.className="tab";b.role="tab";b.textContent=e.k;b.onclick=function(){showEdu(i)};tabs.appendChild(b)});
+function showEdu(i){
+  var e=EDU[i];
+  Array.prototype.forEach.call(tabs.children,function(b,j){b.setAttribute("aria-selected",j===i)});
+  $("edu").innerHTML='<div class="score"><div>'+e.v+'<small>'+e.u+'</small></div></div><div><h3>'+e.t+'</h3><p>'+e.s+'</p><p>'+e.y+'</p></div>';
+}
+showEdu(0);
+
+// Skill filters
+var cur="All",chips=$("chips");
+["All"].concat(Object.keys(SK)).forEach(function(c){var b=document.createElement("button");b.className="chip";b.textContent=c;b.onclick=function(){cur=c;drawSkills()};chips.appendChild(b)});
+function drawSkills(){
+  Array.prototype.forEach.call(chips.children,function(b){b.setAttribute("aria-pressed",b.textContent===cur)});
+  var h="";Object.keys(SK).forEach(function(c){if(cur==="All"||cur===c)SK[c].forEach(function(s){h+='<span class="skill" data-c="'+c+'">'+s+'</span>'})});
+  $("skillList").innerHTML=h;
+}
+drawSkills();
+
+// Activities
+ACT.forEach(function(a){var b=document.createElement("button");b.className="act";b.innerHTML='<span>'+a[0]+'</span><b>'+a[1]+'</b>';b.onclick=function(){b.classList.remove("on");void b.offsetWidth;b.classList.add("on")};$("acts").appendChild(b)});
+
+// Theme toggle
+var root=document.documentElement;
+function dark(){return root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches}
+function icon(){$("theme").textContent=dark()?"☀️":"🌙"}
+$("theme").onclick=function(){root.dataset.theme=dark()?"light":"dark";icon()};icon();
+
+// Copy buttons
+var tt;
+document.querySelectorAll(".copy").forEach(function(b){b.onclick=function(){
+  var msg=function(){var t=$("toast");t.textContent=b.dataset.what+" copied";t.classList.add("show");clearTimeout(tt);tt=setTimeout(function(){t.classList.remove("show")},1800)};
+  try{navigator.clipboard.writeText(b.dataset.copy).then(msg,msg)}catch(e){msg()}
+}});
+
+// Blob parallax
+var reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+document.querySelector(".hero").addEventListener("mousemove",function(ev){
+  if(reduce)return;var x=ev.clientX/innerWidth-.5,y=ev.clientY/innerHeight-.5;
+  document.querySelectorAll(".blob").forEach(function(b){var d=+b.dataset.d;b.style.transform="translate("+x*d+"px,"+y*d+"px)"});
+});
+
+// Scroll reveal + active nav
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add("in")})},{threshold:.12});
+document.querySelectorAll(".rv").forEach(function(s){io.observe(s)});
+var links=document.querySelectorAll("#links a");
+var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})}})},{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section").forEach(function(s){so.observe(s)});
+</script>
+
+
+</body></html>
